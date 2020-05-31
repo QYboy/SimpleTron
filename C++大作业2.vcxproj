@@ -148,6 +148,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="C++大作业2.cpp" />
+    <ClCompile Include="SimpleTron.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SimpleTron.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
