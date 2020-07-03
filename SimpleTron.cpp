@@ -59,8 +59,8 @@ int SimpleTron::getcommand()
 	}
 	else
 	{
-		cout << "ÊäÈë²»ºÏ·¨,ÇëÖØÊÔ\n";
-		//return 2;//Ö¸Áî²»ºÏ·¨
+		cout << "è¾“å…¥ä¸åˆæ³•,è¯·é‡è¯•\n";
+		//return 2;//æŒ‡ä»¤ä¸åˆæ³•
 	}
 	return 1;
 }
@@ -68,8 +68,8 @@ int SimpleTron::getcommand()
 int SimpleTron::process()
 {
 	if (counter != 0) {
-		cout << "Ö¸ÁîÎ»ÖÃÒì³£";
-		//return 1;//Ö¸ÁîÎ»ÖÃÒì³£
+		cout << "æŒ‡ä»¤ä½ç½®å¼‚å¸¸";
+		//return 1;//æŒ‡ä»¤ä½ç½®å¼‚å¸¸
 	}
 	while (operatorCode != 43 && counter <= 99)
 	{
@@ -80,8 +80,7 @@ int SimpleTron::process()
 		{
 		case READ:
 			cout << "#";
-			//ÕâÀïÓÃcin»á³é·ç£¬´ý½â¾ö
-			scanf_s("%d", memory + operand);
+			cin >> *(memory + operand);
 			break;
 		case WRITE:
 			cout << memory[operand]<<endl;
@@ -119,7 +118,7 @@ int SimpleTron::process()
 			halt();
 			break;
 		default:
-			cout << "¾¯¸æ£ºÖ¸Áî²»ÕýÈ·\n´íÎóÎ»ÖÃ\t"<<counter;
+			cout << "è­¦å‘Šï¼šæŒ‡ä»¤ä¸æ­£ç¡®\né”™è¯¯ä½ç½®\t"<<counter;
 			operatorCode = HALT;
 			break;
 		}
